@@ -20,7 +20,8 @@ A VERY simple Magento environment provisioner for [Vagrant](http://www.vagrantup
 
 * Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * Install [Vagrant](http://www.vagrantup.com/)
-* Clone or [download](https://github.com/r-baker/simple-magento-vagrant/archive/master.zip) this repository to the root of your project directory `git clone https://github.com/r-baker/simple-magento-vagrant.git`
+* Clone or [download](https://github.com/r-baker/simple-magento-vagrant/archive/master.zip) this repository to the root of your project directory `git clone https://github.com/schurpf/simple-magento-vagrant.git magento`
+* `cd magento`
 * In your project directory, run `vagrant up`
 
 The first time you run this, Vagrant will download the bare Ubuntu box image. This can take a little while as the image is a few-hundred Mb. This is only performed once.
@@ -54,6 +55,10 @@ Sample data installation can be disabled:
  * Place the sample data `tar.gz` file in the project root
  * Ensure `sample_data = "true"`
  * The provisioning script will skip the download and use the provided file instead. The same goes for when the provisioner is rerun. e.g. `vagrant reload --provision`
+
+## n98-magerun
+
+`magerun`
 
 ## Todo
 * Install Modman.
